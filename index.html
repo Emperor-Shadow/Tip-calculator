@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="tailwind-all.css">
+  <link rel="stylesheet" href="style.css">
+  
+  <title>Frontend Mentor | Tip calculator app</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  
+  <main class="md:flex flex-col items-center justify-center">
+      <header> 
+          <img src="images/logo.svg" alt="">
+      </header>
+
+      <div class="all md:flex md:p-3 md:bg-white md:rounded md:h-100 ">
+          <section class="rounded p-3 px-5 md:w-1/2">
+
+        <p class="topleft">Bill</p>
+ 
+        <div class="input relative">
+            <input type="text" name="" id="" value="142.55"  class="inp  rounded w-full text-right p-3 text-2xl focus:outline-none">
+        <img src="images/icon-dollar.svg" class="absolute" style="top: 25px; left: 20px ;"  alt="">
+        </div>
+
+
+        <div class="select-tip">
+          <h1 class="p-2 font-bold">Select Tip % </h1>
+          <div class="percents">
+            <span value="5" class="h-12 span font-bold text-xl p-2 rounded">5%</span>
+            <span value="5" class="h-12 span font-bold text-xl p-2 rounded">10%</span>
+            <span value="5" class="h-12 span font-bold text-xl p-2 rounded twenty">15%</span>
+            <span value="5" class="h-12 span font-bold text-xl p-2 rounded ">25%</span>
+            <span value="5" class="h-12 span font-bold text-xl p-2 rounded">50%</span>
+            <input type="text" class="ii focus:outline-none h-12 font-bold text-xl p-2 inline-block w-1/2 text-right rounded custom" placeholder="Custom">
+          </div>
+        </div>
+
+        <div class="pp inline-block flex items-center justify-between">
+           <h1 class=" inline-block my-1 mt-4 font-bold nop">Number of People</h1>
+           <h1 class="inline-block text-red-500 cant hidden">Cant be zero</h1>
+        </div>
+       
+        <div class="people relative px-2">
+          <input type="text" name="" id="" value="5"  class="inp ppo rounded w-full text-right p-3 text-2xl focus:outline-none">
+      <img src="images/icon-person.svg" class="absolute" style="top: 25px; left: 40px ;"  alt="">
+      </div>
+
+
+    
+      </section>
+
+      <section class="rounded px-5 md:w-1/2 md:inline-block  ">
+        <div class="out w-full p-4 rounded-lg md:d-inline-block md:h-full md:relative">
+
+          <div class="amt-pers amt flex w-full my-2 ">
+            <span class="inline-block w-1/2">
+              <h1>Tip Amount</h1> 
+              <p> / person </p>
+            </span>
+            <span class="inline-block w-1/2 text-right pp">
+              <h1 class="text-2xl tap">$4.27</h1> 
+            </span>
+          </div>
+
+          <div class="amt-pers amt flex w-full my-2">
+            <span class="inline-block w-1/2">
+              <h1>Total</h1> 
+              <p> / person </p>
+            </span>
+            <span class="inline-block w-1/2 text-right pp">
+              <h1 class="text-2xl ttp">$32.79</h1> 
+            </span>
+          </div>
+
+          <button class="w-full py-2 text-center text-lg font-bold md:absolute ">RESET</button>
+      </div>
+      </section>
+
+      </div>
+    
+  </main>
+
+</body>
+<script src="script.js"></script>
+</html>

@@ -1,0 +1,101 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --StrongCyan: hsl(172, 67%, 45%);
+    --Verydarkcyan: hsl(183, 100%, 15%);
+    --Darkgrayishcyan: hsl(186, 14%, 43%);
+    --Grayishcyan: hsl(184, 14%, 56%);
+    --Lightgrayishcyan: hsl(185, 41%, 84%);
+    --Verylightgrayishcyan: hsl(189, 41%, 97%);
+    --White: hsl(0, 0%, 100%);
+}
+main{
+    background-color: var(--Lightgrayishcyan);
+    width: 100%;
+    height: 100vh;
+}
+header{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+    background-color: var(--Lightgrayishcyan);
+}
+section{
+    background: var(--White);
+}
+section p{
+    color: var(--Darkgrayishcyan);
+}
+.input .inp , .people .inp{
+    background-color: var(--Verylightgrayishcyan);
+    color: var(--Verydarkcyan);
+    font-weight: 700;
+}
+.input .inp:focus , .people .inp:focus ,  .percents .ii:focus {
+     border: 2px solid  var(--Lightgrayishcyan) !important;
+
+}
+.percents{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+.select-tip h1 , .nop{ 
+    color: var(--Grayishcyan);
+}
+.percents span ,  .percents .ii{
+    display: inline-block;
+    width: 45%;
+    background: var(--Verydarkcyan);
+    text-align: center;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* transition: 0.2s ease ; */
+}
+.percents span:hover{
+    background: var(--StrongCyan);
+    color: var(--Verydarkcyan);
+}
+.percents .custom {
+    background: none;
+    color: var(--Grayishcyan);
+}
+section:nth-of-type(2) {
+    height: 30%;
+}
+.out{
+    background: var(--Verydarkcyan);
+}
+.out .amt-pers {
+    color: white;
+}
+.out .amt-pers p {
+    background: transparent;
+}
+.out .amt .pp h1{
+    color: var(--StrongCyan);
+    font-weight: 700;
+}
+.out  button{
+    background : var(--StrongCyan);
+    color: var(--Verydarkcyan);
+    bottom: 20px;
+    left: 0;
+}
+
+@media (min-width: 400px) {
+    section:nth-of-type(2) {
+    height: 100%;
+}
+.out  button {
+    width: 90%;
+    margin: 0 5%;
+}
+}
